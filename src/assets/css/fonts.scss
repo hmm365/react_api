@@ -19,6 +19,16 @@
 }
 
 @font-face {
+	font-family: "Bmjua-Display";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/BMJUA.eot");
+	src: url("../fonts/BMJUA.eot?#iefix") format("embedded-opentype"), url("../fonts/BMJUA.woff2") format("woff2"),
+		url("../fonts/BMJUA.woff") format("woff"), url("../fonts/BMJUA.ttf") format("ttf");
+	font-display: swap;
+}
+
+@font-face {
 	font-family: "Rajdhani-Display";
 	font-weight: 300;
 	font-style: normal;
@@ -61,5 +71,24 @@
 	src: url("../fonts/Rajdhani-Bold.eot");
 	src: url("../fonts/Rajdhani-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rajdhani-Bold.woff2") format("woff2"),
 		url("../fonts/Rajdhani-Bold.woff") format("woff"), url("../fonts/Rajdhani-Bold.ttf") format("ttf");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "HallymMjo";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/HallymMjo-Regular.eot");
+	src: url("../fonts/HallymMjo-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HallymMjo-Regular.woff2") format("woff2"),
+		url("../fonts/HallymMjo-Regular.woff") format("woff"), url("../fonts/HallymMjo-Regular.ttf") format("ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: "HallymMjo";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../fonts/HallymMjo-Bold.eot");
+	src: url("../fonts/HallymMjo-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HallymMjo-Bold.woff2") format("woff2"),
+		url("../fonts/HallymMjo-Bold.woff") format("woff"), url("../fonts/HallymMjo-Bold.ttf") format("ttf");
 	font-display: swap;
 }
