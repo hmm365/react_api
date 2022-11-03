@@ -21,7 +21,7 @@ const RaferCont = ({ references }) => {
 					<h2>CSS</h2>
 					<ul className='refer__list'>
 						{references.map((refer, idx) => (
-							<ReferencesText key={idx} id={refer.id} title={refer.title} desc={refer.desc} use={refer.use} />
+							<ReferencesText key={idx} id={refer.num} title={refer.title} desc={refer.desc} use={refer.descStar} />
 						))}
 					</ul>
 				</div>
