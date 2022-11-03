@@ -4,14 +4,40 @@
 		{
 			"num": 1,
 			"title": "align-content",
-			"desc": "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
-			"descBasic": "align-content : stretch",
+			"desc": "flexbox/grid 컨테이너 내에서 각 줄이 어떻게 정렬되는지 정의합니다.",
+			"descBasic": [
+				{
+					"method": "align-content: stretch;",
+					"desc": " 컨테이너의 시작 가장자리에 대해 서로 같은 높이로 정렬합니다.",
+                    "img": 
+				},
+				{
+					"method": "align-content: flex-start;",
+					"desc": "flexbox/grid 아이템들을 시작점으로 정렬합니다."
+				},
+				{
+					"method": "align-content: flex-end;",
+					"desc": "flexbox/grid 컨테이너의 아이템들을 끝점으로 정렬합니다."
+				},
+				{
+					"method": "align-content: center;",
+					"desc": "flexbox/grid 컨테이너의 아이템들을 가운데로 정렬합니다."
+				},
+				{
+					"method": "align-content: space-between;",
+					"desc": "아이템들의 사이에 균일한 간격을 만들어 줍니다."
+				},
+				{
+					"method": "align-content: space-around;;",
+					"desc": "아이템들의 둘레(around)에 균일한 간격을 만들어 줍니다"
+				}
+			],
 			"descApple": "flexbox",
 			"descVer": "CSS3",
-			"descStar": "★★★☆☆",
+			"descStar": "★★★★★",
 			"definition": [
-				"align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
-				"align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
+				"flexbox/grid 컨테이너 내에서 각 줄이 어떻게 정렬되는지 정의합니다.",
+				"flex-wrap: wrap 을 할수있고 여러 줄 의 flexbox/grid 항목 이 있는 경우에만 적용됩니다 ."
 			]
 		},
 		{
