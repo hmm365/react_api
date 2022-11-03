@@ -1,0 +1,132 @@
+{
+	"type": "css",
+	"cssRefer": [
+		{
+			"num": 1,
+			"title": "align-content",
+			"desc": "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+			"descBasic": "align-content : stretch",
+			"descApple": "flexbox",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": [
+				"align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+				"align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
+			]
+		},
+		{
+			"num": 2,
+			"title": "align-items",
+			"desc": "align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
+			"descBasic": "align-items : stretch",
+			"descApple": "flexbox",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": [
+				"align-items 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+				"align-items 속성은 그리드 레이아웃에서는 그리드 영역 내에서 블록 축의 항목 정렬을 제어합니다."
+			]
+		},
+		{
+			"num": 3,
+			"title": "align-self",
+			"desc": "align-self 속성은 개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.",
+			"descBasic": "align-self : stretch",
+			"descApple": "flexbox",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": ["align-self 개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.", "align-self 속성은 콘텐츠 안의 모든 아이템에 적용됩니다."]
+		},
+		{
+			"num": 4,
+			"title": "all",
+			"desc": "all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.",
+			"descBasic": "all : initial",
+			"descApple": "all",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": [
+				"all 속성은 개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.",
+				"all 속성은 속성은 CSS 전역 키워드 값 중 하나를 사용해 지정합니다."
+			]
+		},
+		{
+			"num": 5,
+			"title": "animation",
+			"desc": "animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.",
+			"descBasic": "animation : 3s ease-in 1s 2 reverse both paused slidein",
+			"descApple": "animation",
+			"descVer": "CSS3",
+			"descStar": "★★★★★",
+			"definition": [
+				"animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.",
+				"animation 속성은 CSS 트랜지션에도 적용된다는 점을 참고하세요."
+			]
+		},
+		{
+			"num": 6,
+			"title": "animation-delay",
+			"desc": "animation-delay 속성은 애니메이션 지연 시간을 설정합니다.",
+			"descBasic": "animation-delay: 3s",
+			"descApple": "animation",
+			"descVer": "CSS3",
+			"descStar": "★★★★★",
+			"definition": [
+				"animation-delay 속성은 애니메이션 지연 시간을 설정합니다.",
+				"animation-delay 속성은 단축 속성을 사용해 애니메이션 관련 속성을 편리하게 같이 지정할 수 있습니다."
+			]
+		},
+		{
+			"num": 7,
+			"title": "animation-direction",
+			"desc": "animation-direction 속성은 애니메이션이 앞으로, 뒤로 또는 앞뒤로 번갈아 재생되어야하는지 여부를 지정합니다.",
+			"descBasic": "animation-direction: normal",
+			"descApple": "animation",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": [
+				"animation-direction 속성은 애니메이션이 앞으로, 뒤로 또는 앞뒤로 번갈아 재생되어야하는지 여부를 지정합니다.",
+				"animation-direction 속성은 축약 속성 animation을 사용하여 모든 애니메이션 속성을 한꺼번에 설정하는 것이 편리합니다."
+			]
+		},
+		{
+			"num": 8,
+			"title": "animation-duration",
+			"desc": "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.",
+			"descBasic": "animation-duration: 6s",
+			"descApple": "animation",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": [
+				"animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.",
+				"animation-duration 속성은 등록금 속성 animation을 사용하고 있습니다."
+			]
+		},
+		{
+			"num": 9,
+			"title": "animation-fill-mode",
+			"desc": "animation-fill-mode 속성은 CSS 애니메이션이 실행 전과 후에 대상에 스타일을 적용하는 방법을 지정합니다.",
+			"descBasic": "animation-fill-mode: none",
+			"descApple": "animation",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": [
+				"animation-fill-mode 속성은 CSS 애니메이션이 실행 전과 후에 대상에 스타일을 적용하는 방법을 지정합니다.",
+				"animation-fill-mode 속성은 축약 속성 animation을 사용하여 모든 애니메이션 속성을 한꺼번에 설정하는 것이 편리합니다."
+			]
+		},
+		{
+			"num": 10,
+			"title": "animation-iteration-count",
+			"desc": "animation-iteration-count 속성 은 애니메이션 시퀀스가 ​​중지되기 전에 재생되어야 하는 횟수를 설정합니다.",
+			"descBasic": "animation-iteration-count: 0",
+			"descApple": "animation",
+			"descVer": "CSS3",
+			"descStar": "★★★☆☆",
+			"definition": [
+				"animation-iteration-count 속성 은 애니메이션 시퀀스가 ​​중지되기 전에 재생되어야 하는 횟수를 설정합니다.",
+				"animation-iteration-count 속성은 모든 애니메이션 속성을 한 번에 설정 하려면 속기 속성을 사용하는 것이 편리한 경우가 많습니다 ."
+			]
+		}
+	]
+}
