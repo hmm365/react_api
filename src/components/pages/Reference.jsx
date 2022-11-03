@@ -17,7 +17,7 @@ export const Reference = () => {
 		fetch("https://hmm365.github.io/react_api/src/utils/reference.json")
 			.then(response => response.json())
 			// .then(result => console.log(result))
-			.then(result => setReferences(result.data.cssRefer))
+			.then(result => setReferences(result.cssRefer))
 			.catch(error => console.log("error", error));
 	}, []);
 
