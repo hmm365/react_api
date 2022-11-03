@@ -11,22 +11,22 @@ import Content from "../layout/Content";
 //변수 : 저장, 추가 , 변경 --> 자동
 
 export const Reference = () => {
-	// const [references, setReferences] = useState([]);
+	const [references, setReferences] = useState([]);
 
-	// useEffect(() => {
-	// 	fetch("https://hmm365.github.io/react_api/src/utils/reference.json")
-	// 		.then(response => response.json())
-	// 		.then(result => console.log(result))
-	// 		// .then(result => setReferences(result.data.cssRefer))
-	// 		.catch(error => console.log("error", error));
-	// }, []);
+	useEffect(() => {
+		fetch("https://hmm365.github.io/react_api/src/utils/reference.json")
+			.then(response => response.json())
+			// .then(result => console.log(result))
+			.then(result => setReferences(result.data.cssRefer))
+			.catch(error => console.log("error", error));
+	}, []);
 
 	return (
 		<>
 			<Header />
 			<Contents>
 				<Title title={["Reference", "Book"]} />
-				{/* <RaferCont references={references} /> */}
+				<RaferCont references={references} />
 				<Content />
 			</Contents>
 			<Footer />
