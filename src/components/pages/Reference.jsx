@@ -5,7 +5,7 @@ import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import Title from "../layout/Title";
 import RaferCont from "../include/RaferCont";
-import Content from "../layout/Content";
+import Contact from "../layout/Contact";
 
 //클래스형 컴퍼넌트 / 함수형 컴퍼넌트 --> 리엑트 훅
 //변수 : 저장, 추가 , 변경 --> 자동
@@ -27,7 +27,7 @@ export const Reference = () => {
 			<Contents>
 				<Title title={["Reference", "Book"]} />
 				<RaferCont references={references} />
-				<Content />
+				<Contact />
 			</Contents>
 			<Footer />
 		</>

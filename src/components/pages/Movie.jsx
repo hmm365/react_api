@@ -5,10 +5,23 @@ import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import Title from "../layout/Title";
 import MovieCont from "../include/MovieCont";
-import Content from "../layout/Content";
+import Contact from "../layout/Contact";
+import MovieSearch from "../include/MovieSearch";
+import MoviePopular from "../include/MoviePopular";
 
 export const Movie = () => {
 	const [movies, setMoives] = useState([]);
+	const [listMovies, setListMovies] = useState([]);
+
+	const search = query => {
+		fetch(
+			`https://api.themoviedb.org/3/search/movie?api_key=891244fed71f3e78a463eb2a1801b383&language=ko-kr&query=${query}&page=1&include_adult=false`
+		)
+			.then(response => response.json())
+			// .then(result => console.log(result.results))
+			.then(result => setMoives(result.results))
+			.catch(error => console.log("error", error));
+	};
 
 	useEffect(() => {
 		fetch(
@@ -20,13 +33,23 @@ export const Movie = () => {
 			.catch(error => console.log("error", error));
 	}, []);
 
+	useEffect(() => {
+		fetch("https://api.themoviedb.org/3/movie/popular?api_key=891244fed71f3e78a463eb2a1801b383&language=ko-kr&page=1")
+			.then(response => response.json())
+			// .then(result => console.log(result.results))
+			.then(result => setListMovies(result.results))
+			.catch(error => console.log("error", error));
+	}, []);
+
 	return (
 		<>
 			<Header />
 			<Contents>
 				<Title title={["movie", "referce api"]} />
+				<MoviePopular popularMovies={listMovies} />
+				<MovieSearch onSearch={search} />
 				<MovieCont movies={movies} />
-				<Content />
+				<Contact />
 			</Contents>
 			<Footer />
 		</>

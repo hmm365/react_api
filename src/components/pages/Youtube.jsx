@@ -4,7 +4,7 @@ import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import Title from "../layout/Title";
 import AboutCont from "../include/AboutCont";
-import Content from "../layout/Content";
+import Contact from "../layout/Contact";
 
 export const Youtube = () => {
 	return (
@@ -13,7 +13,7 @@ export const Youtube = () => {
 			<Contents>
 				<Title title={["Youtube", "referce api"]} />
 				<AboutCont />
-				<Content />
+				<Contact />
 			</Contents>
 			<Footer />
 		</>

@@ -17,27 +17,30 @@ const MoiveItem = movie => {
 	);
 };
 
-const MovieCont = ({ movies }) => {
-	// console.log({ movies });
+const MoviePopular = ({ popularMovies }) => {
+	console.log(popularMovies);
 	return (
-		<section className='cont__movie'>
+		<div className='popular__movie'>
 			<div className='container'>
+				<h2>Best Movie</h2>
 				<div className='movie__inner'>
-					{movies.map((movie, idx) => (
-						<MoiveItem
-							key={idx}
-							movieId={movie.id}
-							title={movie.title}
-							voteAverage={movie.vote_average}
-							poster={movie.poster_path}
-							releasedate={movie.release_date}
-							originName={movie.original_title}
-						/>
-					))}
+					<div className='movie__card__wrap'>
+						{popularMovies.map((movie, idx) => (
+							<MoiveItem
+								key={idx}
+								movieId={movie.id}
+								title={movie.title}
+								voteAverage={movie.vote_average}
+								poster={movie.poster_path}
+								releasedate={movie.release_date}
+								originName={movie.original_title}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 
-export default MovieCont;
+export default MoviePopular;
