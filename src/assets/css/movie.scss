@@ -1,196 +1,176 @@
 .cont__movie {
-	.movie__inner {
-		padding-bottom: 200px;
-		display: flex;
-		flex-wrap: wrap;
-		align-content: center;
-		justify-content: space-around;
-		h2 {
-			font-size: 30px;
-			color: var(--white);
-		}
-		a {
-			color: var(--white);
-		}
-		.card {
-			width: 18%;
-			margin-bottom: 40px;
-			color: var(--white);
-			font-family: var(--font-kor1);
+    .movie__inner {
+        padding-bottom: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        h2 {
+            font-size: 30px;
+            color: var(--white);
+        }
+        a {
+            color: var(--white);
+        }
+        .card {
+            width: 18%;
+            margin-bottom: 40px;
+            color: var(--white);
+            font-family: var(--font-kor1);
 
-			.card__top {
-				margin-bottom: 10px;
-				transition: 0.6s ease;
-				border-radius: 10px;
-				img {
-					border-radius: 10px;
-					width: 100%;
-					object-fit: cover;
-				}
-			}
-			.card__bottom {
-				transition: 0.6s ease;
-				.title {
-					display: block;
-					color: var(--white);
-					margin-bottom: 5px;
-					font-size: 1.3vw;
-					opacity: 0.8;
+            .card__top {
+                margin-bottom: 10px;
+                transition: 0.6s ease;
+                border-radius: 10px;
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .card__bottom {
+                transition: 0.6s ease;
+                .title {
+                    display: block;
+                    color: var(--white);
+                    margin-bottom: 5px;
+                    font-size: 1.3vw;
+                    opacity: 0.8;
 
-					width: 100%;
-					overflow: hidden;
-					white-space: nowrap;
-					text-overflow: ellipsis;
-				}
-				.vote_average {
-					font-size: 1.1vw;
-					opacity: 0.6;
-				}
-				.releasedate {
-					font-size: 1vw;
-					opacity: 0.6;
-				}
-			}
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .vote_average {
+                    font-size: 1.1vw;
+                    opacity: 0.6;
+                }
+                .releasedate {
+                    font-size: 1vw;
+                    opacity: 0.6;
+                }
+            }
 
-			&:hover .card__top,
-			&:hover .card__bottom {
-				transform: translateY(-5px);
-			}
-		}
-	}
+            &:hover .card__top,
+            &:hover .card__bottom {
+                transform: translateY(-5px);
+            }
+        }
+    }
 }
 
 .movie__search {
-	margin-bottom: 100px;
-	.container {
-		position: relative;
-	}
+    margin-bottom: 100px;
+    .container {
+        position: relative;
+    }
 
-	h2 {
-		color: var(--white);
-		font-size: 40px;
-		text-indent: -9999px;
-		height: 0;
-	}
-	input {
-		background: var(--bg-dark);
-		border: 1px solid var(--white);
-		border-radius: 50px;
-		color: var(--white);
-		width: 100%;
-		padding: 14px 30px;
-		font-family: var(--font-kor2);
-	}
-	button {
-		position: absolute;
-		right: 6px;
-		top: 6px;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		border: 0;
-		font-family: var(--font-kor2);
-		cursor: pointer;
-		z-index: 100;
-	}
+    h2 {
+        color: var(--white);
+        font-size: 40px;
+        text-indent: -9999px;
+        height: 0;
+    }
+    input {
+        bottom: 0;
+        background: var(--bg-dark);
+        border: 1px solid var(--white);
+        border-radius: 50px;
+        color: var(--white);
+        width: 100%;
+        padding: 14px 30px;
+        font-family: var(--font-kor2);
+    }
+    button {
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 0;
+        font-family: var(--font-kor2);
+        cursor: pointer;
+        z-index: 100;
+    }
 }
 
 .popular__movie {
-	color: var(--white);
-	h2 {
-		font-size: 50px;
-	}
+    color: var(--white);
+    h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
 
-	.movie__inner::-webkit-scrollbar {
-		width: 5px; /*스크롤바의 너비*/
-		height: 10px;
-	}
+    .movie__inner {
+        padding-bottom: 10px;
+        margin-bottom: 50px;
 
-	.movie__inner::-webkit-scrollbar-thumb {
-		background-color: var(--white); /*스크롤바의 색상*/
-		border-radius: 10px; /*스크롤바 라운드*/
-	}
+        h2 {
+            font-size: 30px;
+        }
+        a {
+            color: var(--white);
+        }
+        .card {
+            width: 70%;
+            margin-left: 15%;
+            color: var(--white);
+            font-family: var(--font-kor1);
+            padding-bottom: 50px;
 
-	.movie__inner::-webkit-scrollbar-track {
-		background-color: #000; /*스크롤바 트랙 색상*/
-		border-radius: 10px; /*스크롤바 트랙 라운드*/
-		box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2); /*스크롤바 트랙 안쪽 그림자*/
-	}
+            .card__top {
+                margin-bottom: 10px;
+                transition: 0.6s ease;
+                border-radius: 10px;
+                position: relative;
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                span {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 28px;
+                    left: 7px;
+                    top: 7px;
+                    background: var(--white);
+                    color: #000;
+                    border-radius: 50%;
+                }
+            }
+            .card__bottom {
+                transition: 0.6s ease;
+                .title {
+                    display: block;
+                    color: var(--white);
+                    margin-bottom: 5px;
+                    font-size: 1.3vw;
+                    opacity: 0.8;
 
-	.movie__inner {
-		padding-bottom: 10px;
-		margin-bottom: 50px;
-		align-content: center;
-		overflow-x: auto;
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .vote_average {
+                    font-size: 1.1vw;
+                    opacity: 0.6;
+                }
+                .releasedate {
+                    font-size: 1vw;
+                    opacity: 0.6;
+                }
+            }
 
-		h2 {
-			font-size: 30px;
-		}
-		a {
-			color: var(--white);
-		}
-
-		.movie__card__wrap {
-			display: flex;
-			width: 2000px;
-			justify-content: space-between;
-			.card {
-				width: 9%;
-				color: var(--white);
-				font-family: var(--font-kor1);
-
-				.card__top {
-					margin-bottom: 10px;
-					transition: 0.6s ease;
-					border-radius: 10px;
-					position: relative;
-					img {
-						border-radius: 10px;
-						width: 100%;
-						object-fit: cover;
-					}
-					span {
-						position: absolute;
-						width: 30px;
-						height: 30px;
-						text-align: center;
-						line-height: 28px;
-						left: 7px;
-						top: 7px;
-						background: var(--white);
-						color: #000;
-						border-radius: 50%;
-					}
-				}
-				.card__bottom {
-					transition: 0.6s ease;
-					.title {
-						display: block;
-						color: var(--white);
-						margin-bottom: 5px;
-						font-size: 1.3vw;
-						opacity: 0.8;
-
-						width: 100%;
-						overflow: hidden;
-						white-space: nowrap;
-						text-overflow: ellipsis;
-					}
-					.vote_average {
-						font-size: 1.1vw;
-						opacity: 0.6;
-					}
-					.releasedate {
-						font-size: 1vw;
-						opacity: 0.6;
-					}
-				}
-
-				&:hover .card__top,
-				&:hover .card__bottom {
-					transform: translateY(-5px);
-				}
-			}
-		}
-	}
+            &:hover .card__top,
+            &:hover .card__bottom {
+                transform: translateY(-5px);
+            }
+        }
+    }
 }
