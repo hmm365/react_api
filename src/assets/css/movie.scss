@@ -97,12 +97,11 @@
 }
 
 .popular__movie {
-    color: var(--white);
+    color: var(--black);
     h2 {
         font-size: 50px;
         margin-bottom: 20px;
     }
-
     .movie__inner {
         padding-bottom: 10px;
         margin-bottom: 50px;
@@ -111,65 +110,31 @@
             font-size: 30px;
         }
         a {
-            color: var(--white);
+            color: var(--black);
         }
-        .card {
-            width: 70%;
-            margin-left: 15%;
-            color: var(--white);
-            font-family: var(--font-kor1);
-            padding-bottom: 50px;
+    }
 
-            .card__top {
-                margin-bottom: 10px;
-                transition: 0.6s ease;
-                border-radius: 10px;
-                position: relative;
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+        .swiper-slide {
+            // background-position: center;
+            // background-size: cover;
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+
+            .card {
                 img {
+                    display: block;
                     border-radius: 10px;
-                    width: 100%;
+                    width: 300px;
+                    height: 450px;
+
                     object-fit: cover;
                 }
-                span {
-                    position: absolute;
-                    width: 30px;
-                    height: 30px;
-                    text-align: center;
-                    line-height: 28px;
-                    left: 7px;
-                    top: 7px;
-                    background: var(--white);
-                    color: #000;
-                    border-radius: 50%;
-                }
-            }
-            .card__bottom {
-                transition: 0.6s ease;
-                .title {
-                    display: block;
-                    color: var(--white);
-                    margin-bottom: 5px;
-                    font-size: 1.3vw;
-                    opacity: 0.8;
-
-                    width: 100%;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }
-                .vote_average {
-                    font-size: 1.1vw;
-                    opacity: 0.6;
-                }
-                .releasedate {
-                    font-size: 1vw;
-                    opacity: 0.6;
-                }
-            }
-
-            &:hover .card__top,
-            &:hover .card__bottom {
-                transform: translateY(-5px);
             }
         }
     }

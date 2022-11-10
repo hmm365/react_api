@@ -1,9 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
-import { Navigation, Pagination, Autoplay } from 'swiper';
-import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper';
 
 const MoiveItem = (movie) => {
     return (
@@ -31,14 +33,24 @@ const MoviePopular = ({ popularMovies }) => {
                 <h2>Best Movie</h2>
                 <div className='movie__inner'>
                     <Swiper
-                        slidesPerView={3}
+                        initialSlide={'5'}
                         autoplay={{
-                            delay: 3000,
+                            delay: 2500,
                             disableOnInteraction: false,
                         }}
-                        pagination={{ clickable: true }}
-                        navigation={true}
-                        modules={[Navigation, Pagination, Autoplay]}
+                        effect={'coverflow'}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={'auto'}
+                        coverflowEffect={{
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: false,
+                        }}
+                        pagination={true}
+                        modules={[EffectCoverflow, Pagination, Autoplay]}
                         className='mySwiper'
                     >
                         {popularMovies.map((movie, idx) =>
