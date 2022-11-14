@@ -1,0 +1,62 @@
+.cont__unsplash {
+    ul {
+        column-count: 4;
+        column-gap: 20px;
+        width: 100%;
+    }
+
+    li {
+        margin-bottom: 20px;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+.unsplash__Slider {
+    color: var(--white);
+    h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .unsplash__inner {
+        padding-bottom: 10px;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 30px;
+        }
+        a {
+            color: var(--white);
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            margin: 0 auto;
+
+            .card {
+                width: 300px;
+                height: 450px;
+                margin: 0 auto;
+                img {
+                    display: block;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

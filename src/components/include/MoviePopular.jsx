@@ -26,7 +26,7 @@ const MoiveItem = (movie) => {
 };
 
 const MoviePopular = ({ popularMovies }) => {
-    console.log(popularMovies);
+    // console.log(popularMovies);
     return (
         <div className='popular__movie'>
             <div className='container'>
@@ -42,6 +42,8 @@ const MoviePopular = ({ popularMovies }) => {
                         grabCursor={true}
                         centeredSlides={true}
                         slidesPerView={'auto'}
+                        loop={true}
+                        loopFillGroupWithBlank={true}
                         coverflowEffect={{
                             rotate: 50,
                             stretch: 0,
@@ -55,9 +57,8 @@ const MoviePopular = ({ popularMovies }) => {
                     >
                         {popularMovies.map((movie, idx) =>
                             idx < 10 ? (
-                                <SwiperSlide>
+                                <SwiperSlide key={idx}>
                                     <MoiveItem
-                                        key={idx}
                                         rank={idx + 1}
                                         movieId={movie.id}
                                         title={movie.title}

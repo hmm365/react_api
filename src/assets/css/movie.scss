@@ -97,7 +97,8 @@
 }
 
 .popular__movie {
-    color: var(--black);
+    font-family: var(--font-kor2);
+    color: var(--white);
     h2 {
         font-size: 50px;
         margin-bottom: 20px;
@@ -110,7 +111,7 @@
             font-size: 30px;
         }
         a {
-            color: var(--black);
+            color: var(--white);
         }
     }
 
@@ -123,17 +124,35 @@
             // background-position: center;
             // background-size: cover;
             width: 300px;
-            height: 450px;
+            height: 500px;
             border-radius: 10px;
 
             .card {
-                img {
-                    display: block;
-                    border-radius: 10px;
-                    width: 300px;
-                    height: 450px;
-
-                    object-fit: cover;
+                .card__top {
+                    position: relative;
+                    span {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        padding: 5px 10px;
+                        border-radius: 50%;
+                        background: var(--bg-dark);
+                    }
+                    img {
+                        display: block;
+                        border-radius: 10px;
+                        width: 300px;
+                        height: 450px;
+                        object-fit: cover;
+                    }
+                }
+                .card__bottom {
+                    .vote_average {
+                        opacity: 0.6;
+                    }
+                    .releasedate {
+                        opacity: 0.6;
+                    }
                 }
             }
         }
