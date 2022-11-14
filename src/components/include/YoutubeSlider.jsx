@@ -6,7 +6,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // import { EffectCoverflow, Pagination, Autoplay } from 'swiper';
-import { Pagination, Autoplay } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 const YoutubeRandom = (youtube) => {
     return (
@@ -20,10 +20,10 @@ const YoutubeRandom = (youtube) => {
 
 const YoutubeSlider = ({ random }) => {
     return (
-        <div className='unsplash__Slider'>
+        <div className='youtube__Slider'>
             <div className='container'>
                 <h2>Rander youtube</h2>
-                <div className='unsplash__inner'>
+                <div className='youtube__inner'>
                     <Swiper
                         // initialSlide={'5'}
                         // autoplay={{
@@ -45,18 +45,17 @@ const YoutubeSlider = ({ random }) => {
                         // modules={[EffectCoverflow, Pagination, Autoplay]}
                         // className='mySwiper'
 
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
+                        // autoplay={{
+                        //     delay: 2500,
+                        //     disableOnInteraction: false,
+                        // }}
+                        pagination={{
+                            type: 'progressbar',
                         }}
                         loop={true}
                         loopFillGroupWithBlank={true}
-                        slidesPerView={5}
-                        spaceBetween={30}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        modules={[Pagination, Autoplay]}
+                        navigation={true}
+                        modules={[Navigation, Pagination]}
                         className='mySwiper'
                     >
                         {random.map((youtube) => (

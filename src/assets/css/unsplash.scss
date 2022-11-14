@@ -60,3 +60,16 @@
         }
     }
 }
+
+.unsplash__btns {
+    margin-bottom: 20px;
+    .btn {
+        border: 0;
+        margin-right: 20px;
+        font-family: var(--font-kor2);
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

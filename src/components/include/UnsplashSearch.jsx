@@ -16,7 +16,6 @@ const UnsplashSearch = ({ onSearch }) => {
 
     const onClick = () => {
         handleSearch();
-        console.log('onClick');
     };
 
     return (
