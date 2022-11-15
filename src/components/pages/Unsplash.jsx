@@ -23,7 +23,7 @@ export const Unsplash = () => {
     };
 
     useEffect(() => {
-        fetch('https://api.unsplash.com/photos/random?client_id=XNTqM2xvTnEFo9-LRypjJ0rmsasrQOcjWsqV6xl_UB4&query=sea&count=30')
+        fetch('https://api.unsplash.com/photos/random?client_id=XNTqM2xvTnEFo9-LRypjJ0rmsasrQOcjWsqV6xl_UB4&count=30')
             .then((response) => response.json())
             // .then((result) => console.log(result))
             .then((result) => setImages(result))
