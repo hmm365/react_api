@@ -2,10 +2,6 @@ import React from 'react';
 
 const unsplashTags = [{ name: 'Sky' }, { name: 'Sea' }, { name: 'Moon' }, { name: 'Star' }];
 
-const UnsplashTagList = ({ tag }) => {
-    return <span>{tag}</span>;
-};
-
 const UnsplashBtn = ({ onSearch }) => {
     const handleSearch = (tag) => {
         onSearch(tag);
@@ -19,7 +15,7 @@ const UnsplashBtn = ({ onSearch }) => {
             <div className='container'>
                 {unsplashTags.map((tag, inx) => (
                     <button type='button' className='btn' onClick={btnClick} key={inx}>
-                        <UnsplashTagList tag={tag.name} />
+                        {tag.name}
                     </button>
                 ))}
             </div>

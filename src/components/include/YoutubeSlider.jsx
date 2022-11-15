@@ -54,7 +54,6 @@ const YoutubeSlider = ({ random }) => {
                         }}
                         loop={true}
                         loopFillGroupWithBlank={true}
-                        navigation={true}
                         modules={[Navigation, Pagination]}
                         className='mySwiper'
                     >

@@ -8,6 +8,7 @@ import MovieCont from '../include/MovieCont';
 import Contact from '../layout/Contact';
 import MovieSearch from '../include/MovieSearch';
 import MoviePopular from '../include/MoviePopular';
+import MovieBtn from '../include/MovieBtn';
 
 export const Movie = () => {
     const [movies, setMoives] = useState([]);
@@ -46,6 +47,7 @@ export const Movie = () => {
                 <Title title={['movie', 'referce api']} />
                 <MoviePopular popularMovies={listMovies} />
                 <MovieSearch onSearch={search} />
+                <MovieBtn onSearch={search} />
                 <MovieCont movies={movies} />
                 <Contact />
             </Contents>

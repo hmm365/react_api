@@ -1,7 +1,8 @@
 import React from 'react';
 
-const unsplashTags = [{ name: '이바다' }, { name: '소각소각' }, { name: '윤하' }, { name: '리엑트' }];
-const YoutubeBtn = ({ onSearch }) => {
+const movieTags = [{ name: '마블' }, { name: '올드보이' }, { name: '타짜' }, { name: '테이큰' }];
+
+const MovieBtn = ({ onSearch }) => {
     const handleSearch = (tag) => {
         onSearch(tag);
     };
@@ -10,9 +11,9 @@ const YoutubeBtn = ({ onSearch }) => {
         handleSearch(e.target.innerText);
     };
     return (
-        <div className='youtube__btns'>
+        <div className='movie__btns'>
             <div className='container'>
-                {unsplashTags.map((tag, inx) => (
+                {movieTags.map((tag, inx) => (
                     <button type='button' className='btn' onClick={btnClick} key={inx}>
                         {tag.name}
                     </button>
@@ -22,4 +23,4 @@ const YoutubeBtn = ({ onSearch }) => {
     );
 };
 
-export default YoutubeBtn;
+export default MovieBtn;
