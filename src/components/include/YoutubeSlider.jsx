@@ -20,41 +20,19 @@ const YoutubeRandom = (youtube) => {
 
 const YoutubeSlider = ({ random }) => {
     return (
-        <section className='youtube__Slider'>
+        <section className='youtube__slider'>
             <div className='container'>
                 <h2>Rander youtube</h2>
                 <div className='youtube__inner'>
                     <Swiper
-                        // initialSlide={'5'}
-                        // autoplay={{
-                        //     delay: 2500,
-                        //     disableOnInteraction: false,
-                        // }}
-                        // effect={'coverflow'}
-                        // grabCursor={true}
-                        // centeredSlides={true}
-                        // slidesPerView={'auto'}
-                        // coverflowEffect={{
-                        //     rotate: 50,
-                        //     stretch: 0,
-                        //     depth: 100,
-                        //     modifier: 1,
-                        //     slideShadows: false,
-                        // }}
-                        // pagination={true}
-                        // modules={[EffectCoverflow, Pagination, Autoplay]}
-                        // className='mySwiper'
-
-                        // autoplay={{
-                        //     delay: 2500,
-                        //     disableOnInteraction: false,
-                        // }}
-                        pagination={{
-                            type: 'progressbar',
-                        }}
+                        slidesPerView={1}
+                        spaceBetween={30}
                         loop={true}
-                        loopFillGroupWithBlank={true}
-                        modules={[Navigation, Pagination]}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
                         className='mySwiper'
                     >
                         {random.map((youtube) => (
