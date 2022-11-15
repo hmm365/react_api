@@ -10,7 +10,7 @@ const YoutubeBtn = ({ onSearch }) => {
         handleSearch(e.target.innerText);
     };
     return (
-        <div className='youtube__btns'>
+        <section className='youtube__btns'>
             <div className='container'>
                 {unsplashTags.map((tag, inx) => (
                     <button type='button' className='btn' onClick={btnClick} key={inx}>
@@ -18,7 +18,7 @@ const YoutubeBtn = ({ onSearch }) => {
                     </button>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -11,7 +11,7 @@ const MovieBtn = ({ onSearch }) => {
         handleSearch(e.target.innerText);
     };
     return (
-        <div className='movie__btns'>
+        <section className='movie__btns'>
             <div className='container'>
                 {movieTags.map((tag, inx) => (
                     <button type='button' className='btn' onClick={btnClick} key={inx}>
@@ -19,7 +19,7 @@ const MovieBtn = ({ onSearch }) => {
                     </button>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

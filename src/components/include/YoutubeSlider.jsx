@@ -20,7 +20,7 @@ const YoutubeRandom = (youtube) => {
 
 const YoutubeSlider = ({ random }) => {
     return (
-        <div className='youtube__Slider'>
+        <section className='youtube__Slider'>
             <div className='container'>
                 <h2>Rander youtube</h2>
                 <div className='youtube__inner'>
@@ -73,7 +73,7 @@ const YoutubeSlider = ({ random }) => {
                     </Swiper>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

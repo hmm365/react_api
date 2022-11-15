@@ -19,7 +19,7 @@ const UnsplashSearch = ({ onSearch }) => {
     };
 
     return (
-        <div className='movie__search'>
+        <section className='unsplash__search'>
             <div className='container'>
                 <h2>검색하기</h2>
                 <input ref={inputRef} type='search' placeholder='검색하세요!' onKeyPress={onKeyPress} />
@@ -27,7 +27,7 @@ const UnsplashSearch = ({ onSearch }) => {
                     검색
                 </button>
             </div>
-        </div>
+        </section>
     );
 };
 export default UnsplashSearch;

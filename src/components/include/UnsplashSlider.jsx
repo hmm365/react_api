@@ -20,7 +20,7 @@ const ImageRandom = (image) => {
 
 const UnsplashSlider = ({ random }) => {
     return (
-        <div className='unsplash__Slider'>
+        <section className='unsplash__slider'>
             <div className='container'>
                 <h2>Rander images</h2>
                 <div className='unsplash__inner'>
@@ -73,7 +73,7 @@ const UnsplashSlider = ({ random }) => {
                     </Swiper>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -11,7 +11,7 @@ const UnsplashBtn = ({ onSearch }) => {
         handleSearch(e.target.innerText);
     };
     return (
-        <div className='unsplash__btns'>
+        <section className='unsplash__btns'>
             <div className='container'>
                 {unsplashTags.map((tag, inx) => (
                     <button type='button' className='btn' onClick={btnClick} key={inx}>
@@ -19,7 +19,7 @@ const UnsplashBtn = ({ onSearch }) => {
                     </button>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

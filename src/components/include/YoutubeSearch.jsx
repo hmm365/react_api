@@ -20,7 +20,7 @@ const YoutubeSearch = ({ onSearch }) => {
     };
 
     return (
-        <div className='youtube__search'>
+        <section className='youtube__search'>
             <div className='container'>
                 <h2>검색하기</h2>
                 <input ref={inputRef} type='search' placeholder='검색하세요!' onKeyPress={onKeyPress} />
@@ -28,7 +28,7 @@ const YoutubeSearch = ({ onSearch }) => {
                     검색
                 </button>
             </div>
-        </div>
+        </section>
     );
 };
 

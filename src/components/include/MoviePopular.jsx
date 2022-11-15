@@ -28,7 +28,7 @@ const MoiveItem = (movie) => {
 const MoviePopular = ({ popularMovies }) => {
     // console.log(popularMovies);
     return (
-        <div className='popular__movie'>
+        <section className='popular__movie'>
             <div className='container'>
                 <h2>Best Movie</h2>
                 <div className='movie__inner'>
@@ -73,7 +73,7 @@ const MoviePopular = ({ popularMovies }) => {
                     </Swiper>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
